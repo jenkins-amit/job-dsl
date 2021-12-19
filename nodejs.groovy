@@ -14,7 +14,7 @@ job('nodejs-example') {
         nodejs('nodejs17')
     }
 
-    step {
+    steps {
         shell('npm install')
     }
 }
