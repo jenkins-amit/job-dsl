@@ -13,7 +13,7 @@ job('nodejs docker app') {
     steps {
         dockerBuildAndPublish {
             repositoryName('amit0511/nodejs-app')
-            tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
+            tag('${GIT_REVISION,length=7}')
             registryCredentials('DockerLoginCreds')
             forcePull(false)
             createFingerprints(false)
